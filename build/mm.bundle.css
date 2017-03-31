@@ -4,7 +4,7 @@
  *
  * Use it to customise the look and feel of the app.
  */
-/*!
+/*
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
   https://twitter.com/benjsperry  https://twitter.com/ionicframework
@@ -15,6 +15,31 @@
   used under CC BY http://creativecommons.org/licenses/by/4.0/
   Modified icons to fit ionicon’s grid from original.
 */
+
+/***START: XJTLU ADDITION 03/Aug/2016 - modify css**/
+.item-thumbnail-left .item-content > img:first-child{
+	border-radius:50% !important;
+}
+
+.ion-plus{
+	display:none !important;
+}
+
+/** remove li a[title="Front page"], a[title="Participants"], a[title="View course report"] */
+.pane .list li a[title=Language],  li a[title="My files"],  a[title="Notes"], a[title="Add a new note"], a[title="Grades"]{
+display:none !important;
+}
+
+.scroll .list li[ng-if="versionname"], .scroll .list li[ng-if="versioncode"],.scroll .list li[ng-if="navigator && navigator.language"],.scroll .list li[ng-if="appready"],.scroll .list li[ng-if="currentlanguage"],.scroll .list li[ng-if="devicewebworkers"],.scroll .list li[ng-if="storagetype"],.scroll .list li[ng-if="localnotifavailable"],.scroll .list li[ng-if="locationhref"],.scroll .list li[ng-if="device && device.cordova"],.scroll .list li[ng-if="device && device.platform"],.scroll .list li[ng-if="device && device.version"],.scroll .list li[ng-if="device && device.model"],.scroll .list li[ng-if="device && device.uuid"],.scroll .list li[ng-if="filesystemroot"]{
+	display:none !important;
+}
+
+.list li[ng-if="appsetting-about-license-title"], .list li[ng-if="appsetting-about-license-detail"]{
+	display:none !important;
+}
+
+/**END: XJTLU ADDITION 03/Aug/2016**/
+
 @font-face {
   font-family: "Ionicons";
   src: url("../lib/ionic/release/fonts/ionicons.eot?v=2.0.1");
@@ -8426,21 +8451,21 @@ em {
 
 .bar-content {
   border-color: transparent;
-  background-color: #f70;
+  background-color: #0e83cd;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
   color: #fff; }
   .bar-content .title {
     color: #fff; }
   .bar-content .button {
     border-color: transparent;
-    background-color: #f70;
+    background-color: #0e83cd;
     color: #fff; }
     .bar-content .button:hover {
       color: #fff;
       text-decoration: none; }
     .bar-content .button.active, .bar-content .button.activated {
       border-color: transparent;
-      background-color: #f70; }
+      background-color: #0e83cd; }
     .bar-content .button.button-clear {
       border-color: transparent;
       background: none;
@@ -9641,7 +9666,7 @@ mm-course-mod-description .card .item, mm-course-mod-description .card .mm-grade
 
 .bar-side-menu {
   border-color: transparent;
-  background-color: #f70;
+  background-color: #0e83cd;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
   color: #fff;
   height: 80px !important; }

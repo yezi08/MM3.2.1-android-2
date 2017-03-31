@@ -4,10 +4,20 @@
             <li class="item">
                 <h2>{{appname}} {{versionname}}</h2>
             </li>
+<!-- START: XJTLU ADDITION 03/Aug/2016 - modify content in about in setting
+original code:
             <li class="item item-divider">
+END: XJTLU ADDITION 03/Aug/2016
+-->
+            <li class="item item-divider" ng-if="appsetting-about-license-title">
                 <p>{{ 'mm.settings.license' | translate }}</p>
             </li>
+<!-- START: XJTLU ADDITION 03/Aug/2016 - modify content in about in setting
+original code:
             <li class="item item-text-wrap">
+END: XJTLU ADDITION 03/Aug/2016
+-->
+            <li class="item item-text-wrap" ng-if="appsetting-about-license-detail">
                 <h2>Apache 2.0</h2>
                 <p><a href="http://www.apache.org/licenses/LICENSE-2.0" mm-link auto-login="no">http://www.apache.org/licenses/LICENSE-2.0</a></p>
             </li>

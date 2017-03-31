@@ -42,7 +42,7 @@ $dark:                            #444 !default;
 
 /**remove li a[title="Front page"], a[title="Participants"],*/
 .pane .list li a[title=Language],  li a[title="My files"],  a[title="Notes"], a[title="Add a new note"], a[title="Grades"]{
-display:none;
+	display:none !important;
 }
 
 /*END: XJTLU ADDITION 03/Aug/2016*/
